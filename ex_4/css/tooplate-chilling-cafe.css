@@ -111,6 +111,13 @@ tr.tm-tr-header {
   margin-left: auto;
   margin-right: auto;
   padding-top: 0;
+  display: block; 
+}
+
+@media (max-width: 768px) {
+  .tm-section-small {
+      display: none;
+  }
 }
 
 p {
@@ -132,17 +139,26 @@ figcaption span {
 .tm-item-name {
   margin-top: 20px;
   margin-bottom: 10px;
+ 
+ 
 }
 
 .tm-special-items {
   display: flex;
   margin-left: -15px;
   margin-right: -15px;
+
 }
 
 .tm-special-item {
-  padding-left: 15px;
-  padding-right: 15px;
+
+  margin: 10px;
+  display: flex ;
+  width: 30%;
+  border-radius: 50%;
+  overflow: hidden;
+
+  
 }
 
 hr {
@@ -228,4 +244,8 @@ a { transition: all 0.3s ease; }
     margin-bottom: 0;
     line-height: 1;
   }
+}
+
+.sliderr {
+  flex: 10 0 100%;
 }

@@ -92,36 +92,42 @@ https://www.tooplate.com/view/2118-chilling-cafe
               </tr>
               <tr>
                 <td class="tm-text-left">Pure White Milk</td>
+                <td>Someone</td>
                 <td>$5</td>
                 <td>$10</td>
                 <td>-</td>
               </tr>
               <tr>
                 <td class="tm-text-left">Hong Kong Tea</td>
+                <td>Someone</td>
                 <td>$8</td>
                 <td>$12</td>
                 <td>$4</td>
               </tr>
               <tr>
                 <td class="tm-text-left">Taiwan Tea</td>
+                <td>Someone</td>
                 <td>$4</td>
                 <td>$10</td>
                 <td>$4</td>
               </tr>
               <tr>
                 <td class="tm-text-left">Bubble Tea</td>
+                <td>Someone</td>
                 <td>$8</td>
                 <td>$12</td>
                 <td>-</td>
               </tr>
               <tr>
                 <td class="tm-text-left">Mixed Fruit Tea</td>
+                <td>Someone</td>
                 <td>$10</td>
                 <td>$10</td>
                 <td>$8</td>
               </tr>
               <tr>
                 <td class="tm-text-left">Original Tea</td>
+                <td>Someone</td>
                 <td>$12</td>
                 <td>$12</td>
                 <td>-</td>
@@ -158,6 +164,41 @@ https://www.tooplate.com/view/2118-chilling-cafe
           </div>
         </section>
         <hr />
+        <section class="tm-section">
+          <h2 class="tm-section-header">Special Items</h2>
+          <div class="tm-special-items">
+            <div class="sliderr">
+              <img class="mySlides" src="img/chilling-cafe-11.jpg" style="width:100%">
+              <img class="mySlides" src="img/chilling-cafe-12.jpg" style="width:100%">
+              <img class="mySlides" src="img/chilling-cafe-13.jpg" style="width:100%">
+              <button class="buttoon" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="buttoon" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+            
+            <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
+          </div>
+        </section>
+
+        <hr />
+
         <!-- About our cafe -->
         <section class="tm-section tm-section-small">
           <h2 class="tm-section-header">About our cafe</h2>
